@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Porsche Next TT';
+    src: url('PorscheNextTT-Thin.woff2') format('woff2'),
+        url('PorscheNextTT-Thin.woff') format('woff'),
+        url('PorscheNextTT-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Porsche Next TT';
+    src: url('PorscheNextTT-Regular.woff2') format('woff2'),
+        url('PorscheNextTT-Regular.woff') format('woff'),
+        url('PorscheNextTT-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Porsche Next TT';
+    src: url('PorscheNextTT-Bold.woff2') format('woff2'),
+        url('PorscheNextTT-Bold.woff') format('woff'),
+        url('PorscheNextTT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

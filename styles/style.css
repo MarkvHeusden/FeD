@@ -2,6 +2,8 @@
 :root {
     --hoofdkleur: #FFFFFF;
     --contrastkleur: #000000;
+    --contrastkleur2: #323232;
+    --contrastkleur3: #191f22;
     --schaduw: rgba(0, 0, 0, .14) 0 0 8px 0;
     --border: 1px solid #ccc;
 }
@@ -21,13 +23,25 @@ html {
 
 body {}
 
-h1 {}
+h1 {
+    font-size: 1.9em;
+    font-weight: 600;
+}
 
 h2 {
     padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-p {}
+h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
 
 ul,
 ol {
@@ -77,13 +91,6 @@ header nav {
     padding-right: .8em;
 }
 
-header nav a {
-    /*
-    background-color: var(--hoofdkleur);
-    height: 6em;
-*/
-}
-
 header nav a img {
     background-color: var(--hoofdkleur);
     height: 5em;
@@ -116,12 +123,7 @@ main {
 main button {}
 
 
-/* Sections */
-
-section {}
-
-.main_slider {}
-
+/* Slider section */
 .main_slider ol {
     scroll-snap-type: x mandatory;
     display: flex;
@@ -133,8 +135,7 @@ section {}
 
 .main_slider ol li {
     scroll-snap-align: start;
-    min-width: 100vw;
-    height: 100vh;
+    min-width: 100%;
     position: relative;
     height: 26em;
 }
@@ -151,8 +152,6 @@ section {}
     position: absolute;
     left: 8%;
     top: 5%;
-    font-size: 1.9em;
-    font-weight: 600;
 }
 
 .main_slider ol li:first-of-type p {
@@ -161,7 +160,6 @@ section {}
     left: 8%;
     top: 15%;
     font-size: 1.3em;
-    font-weight: 500;
     width: 85%;
     line-height: 1.3em;
 }
@@ -171,8 +169,6 @@ section {}
     position: absolute;
     left: 8%;
     bottom: 15%;
-    font-size: 1.9em;
-    font-weight: 600;
 }
 
 .main_slider ol li p {
@@ -181,13 +177,11 @@ section {}
     left: 8%;
     bottom: 10%;
     font-size: 1.3em;
-    font-weight: 500;
     width: 90%;
     line-height: 1.3em;
 }
 
-.modellen {
-}
+/* Modellen section */
 
 .modellen ul {
     display: flex;
@@ -208,41 +202,84 @@ section {}
     color: var(--hoofdkleur);
     position: absolute;
     bottom: 2.5em;
-    left: 20%;
-    font-size: 1.3em;
-    font-weight: 600;
-    
+    left: 15%;
 }
 
 .modellen ul li p {
     color: var(--hoofdkleur);
     position: absolute;
     bottom: 1em;
-    left: 20%;
+    left: 15%;
     font-size: 0.8em;
-    font-weight: 500;
-    width: 50%;
+    width: 75%;
 }
 
-article {}
 
-article header {}
+/* Actueel section*/
 
-article h3 {}
+.actueel {
+    padding: 1.5rem;
+}
 
-article footer {}
+.actueel h2 {
+    padding: 0 0 1.5rem 0;
+}
 
-aside {}
+.actueel ol {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.actueel ol li {
+    scroll-snap-align: start;
+    min-width: 100%;
+}
+
+.actueel ol li img {
+    width: 100%;
+}
+
+actueel ol li p {
+}
+
 
 footer {}
 
-/* Component styling */
-section#some-ultra-cool-component {}
-
 
 /* Breakpoints */
-@media all and (min-width: 30em) {}
+@media all and (min-width: 30em) {
+}
 
-@media all and (min-width: 60em) {}
+@media all and (min-width: 60em) {
+    .modellen ul li {
+        flex-basis: 33.3333333333%;
+    }
+}
 
-@media all and (min-width: 90em) {}
+@media all and (min-width: 90em) {
+    html:before {
+        content: "Bekijk deze site op mobiel";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        color: var(--contrastkleur);
+        font-family: 'Porsche Next TT', 'Arial Narrow', sans-serif;
+        font-size: 6vw;
+        visibility: visible;
+        background-color: var(--hoofdkleur);
+        pointer-events: all;
+        z-index: 100;
+        overflow: hidden;
+        font-weight: 900;
+        opacity: 0.8;
+    }
+    body {
+        overflow: hidden;
+    }
+}
