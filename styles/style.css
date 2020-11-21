@@ -1,5 +1,248 @@
-/* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+/* Variabelen*/
+:root {
+    --hoofdkleur: #FFFFFF;
+    --contrastkleur: #000000;
+    --schaduw: rgba(0, 0, 0, .14) 0 0 8px 0;
+    --border: 1px solid #ccc;
 }
 
+/* Generic styling */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Porsche Next TT', 'Arial Narrow', sans-serif;
+}
+
+body {}
+
+h1 {}
+
+h2 {
+    padding: 1.5rem;
+}
+
+p {}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+li {}
+
+a {
+    color: var(--contrastkleur);
+    text-decoration: none;
+}
+
+a:link {}
+
+a:visited {}
+
+a:hover,
+a:focus {}
+
+a:active {}
+
+button {}
+
+/* form styling */
+form {}
+
+fieldset {}
+
+legend {}
+
+label {}
+
+input {}
+
+input:invalid {}
+
+/* Section styling */
+header {}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    position: relative;
+    padding-right: .8em;
+}
+
+header nav a {
+    /*
+    background-color: var(--hoofdkleur);
+    height: 6em;
+*/
+}
+
+header nav a img {
+    background-color: var(--hoofdkleur);
+    height: 5em;
+    box-shadow: var(--schaduw);
+    width: 6.5em;
+    margin: 0 0 0 .3em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+header nav ul {
+    display: flex;
+
+}
+
+header nav ul li {
+    padding: 0 1em
+}
+
+header nav ul li:first-of-type {
+    border-right: 1px solid #ccc;
+}
+
+main {
+
+}
+
+main button {}
+
+
+/* Sections */
+
+section {}
+
+.main_slider {}
+
+.main_slider ol {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    height: 26em;
+    overflow-y: hidden;
+}
+
+.main_slider ol li {
+    scroll-snap-align: start;
+    min-width: 100vw;
+    height: 100vh;
+    position: relative;
+    height: 26em;
+}
+
+.main_slider ol li img {
+    object-fit: cover;
+    object-position: 50% 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.main_slider ol li:first-of-type h1 {
+    color: var(--contrastkleur);
+    position: absolute;
+    left: 8%;
+    top: 5%;
+    font-size: 1.9em;
+    font-weight: 600;
+}
+
+.main_slider ol li:first-of-type p {
+    color: var(--contrastkleur);
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    font-size: 1.3em;
+    font-weight: 500;
+    width: 85%;
+    line-height: 1.3em;
+}
+
+.main_slider ol li h1 {
+    color: var(--hoofdkleur);
+    position: absolute;
+    left: 8%;
+    bottom: 15%;
+    font-size: 1.9em;
+    font-weight: 600;
+}
+
+.main_slider ol li p {
+    color: var(--hoofdkleur);
+    position: absolute;
+    left: 8%;
+    bottom: 10%;
+    font-size: 1.3em;
+    font-weight: 500;
+    width: 90%;
+    line-height: 1.3em;
+}
+
+.modellen {
+}
+
+.modellen ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modellen ul li {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.modellen ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.modellen ul li h3 {
+    color: var(--hoofdkleur);
+    position: absolute;
+    bottom: 2.5em;
+    left: 20%;
+    font-size: 1.3em;
+    font-weight: 600;
+    
+}
+
+.modellen ul li p {
+    color: var(--hoofdkleur);
+    position: absolute;
+    bottom: 1em;
+    left: 20%;
+    font-size: 0.8em;
+    font-weight: 500;
+    width: 50%;
+}
+
+article {}
+
+article header {}
+
+article h3 {}
+
+article footer {}
+
+aside {}
+
+footer {}
+
+/* Component styling */
+section#some-ultra-cool-component {}
+
+
+/* Breakpoints */
+@media all and (min-width: 30em) {}
+
+@media all and (min-width: 60em) {}
+
+@media all and (min-width: 90em) {}
