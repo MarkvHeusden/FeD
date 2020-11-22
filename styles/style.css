@@ -261,7 +261,6 @@ main button {}
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
-/*    flex-direction: row-reverse*/
 }
 
 .social ul li {
