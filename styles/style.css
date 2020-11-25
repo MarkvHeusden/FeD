@@ -283,6 +283,7 @@ main button {}
 .social ul li {
     flex-basis: 50%;
     flex-grow: 1;
+    padding: .1em;
 }
 
 .social ul li img {
