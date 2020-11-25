@@ -3,8 +3,11 @@
     --hoofdkleur: #FFFFFF;
     --contrastkleur: #000000;
     --contrastkleur2: #323232;
-    --contrastkleur3: #191f22;
+    --contrastkleur3: #313639;
+    --contrastkleur4: #191f22;
+    --contrastkleur5: #959899;
     --schaduw: rgba(0, 0, 0, .14) 0 0 8px 0;
+    /*    0 5px 5px -2.5px rgba(0,0,0,.2);*/
     --border: 1px solid #ccc;
 }
 
@@ -27,7 +30,7 @@ body {
 }
 
 h1 {
-    font-size: 1.9em;
+    font-size: 1.9rem;
     font-weight: 600;
 }
 
@@ -38,7 +41,12 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3em;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -71,6 +79,17 @@ button {}
 
 /* form styling */
 form {}
+
+select {
+    color: var(--hoofdkleur);
+    font-size: 1em;
+    font-family: 'Porsche Next TT', 'Arial Narrow', sans-serif;
+    outline: none;
+    border-radius: 0;
+    appearance: none;
+    outline: none;
+    border: none;
+}
 
 fieldset {}
 
@@ -119,9 +138,7 @@ header nav ul li:first-of-type {
     border-right: 1px solid #ccc;
 }
 
-main {
-
-}
+main {}
 
 main button {}
 
@@ -145,7 +162,7 @@ main button {}
 
 .main_slider ol li img {
     object-fit: cover;
-/*    object-position: 50% 0%;*/
+    /*    object-position: 50% 0%;*/
     width: 100%;
     height: 100%;
 }
@@ -250,7 +267,7 @@ main button {}
     background-color: var(--contrastkleur2);
     color: var(--hoofdkleur);
     padding: 1.5rem;
-/*    position: relative;*/
+    /*    position: relative;*/
 }
 
 .social h2 {
@@ -280,13 +297,160 @@ main button {}
     display: inline-block;
 }
 
+/* servide en advies section*/
+
+.service_advies {
+    padding: 1.5rem
+}
+
+.service_advies h2 {
+    padding: 0 0 1.5rem 0;
+}
+
+
+
+/*
+.main_slider ol {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    height: 26em;
+    overflow-y: hidden;
+}
+
+.main_slider ol li {
+    scroll-snap-align: start;
+    min-width: 100%;
+    position: relative;
+    height: 26em;
+}
+
+.main_slider ol li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+.service_advies ul {
+    display: flex;
+    flex-wrap: wrap;
+    /*    flex-direction: row-reverse;*/
+}
+
+.service_advies ul li {
+    position: relative;
+    flex-grow: 1;
+    /*    flex-basis: 50%;*/
+    height: 11em;
+    /*    min-width: 100%;*/
+    /*    overflow-y: hidden;*/
+}
+
+.service_advies ul li img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*    overflow-y: hidden;*/
+}
+
+.service_advies ul li h3 {
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+    color: var(--hoofdkleur);
+}
+
 
 footer {}
 
+/* drop-down links */
+
+.related_links {
+    padding: 1.5rem;
+}
+
+.links {
+    margin-bottom: 3em;
+}
+
+.links > li:first-of-type {
+    border-top: var(--border);
+}
+
+.links > li {
+    padding: .7em 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-bottom: var(--border);
+}
+
+.links ul {
+    display: none;
+}
+
+/* Iconen lijst */
+
+.related_links h4 {
+    color: var(--contrastkleur5);
+}
+
+.icons {
+    display: flex;
+}
+
+.icons li {
+    background-color: var(--contrastkleur3);
+    width: 3.1em;
+    height: 3.1em;
+    margin-right: .5em;
+    position: relative;
+}
+
+/* Disclamer */
+
+.disclamer {
+    padding: 1.5rem;
+    background-color: var(--contrastkleur4);
+    color: var(--hoofdkleur);
+}
+
+.regio_form {
+    margin-bottom: 1.5em;
+}
+
+.regio_form label {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+.regio_form select {
+    width: 100%;
+    padding: .8em;
+    background-color: var(--contrastkleur3);
+    margin-bottom: .5em;
+}
+
+.regio_form option {
+    /*    background-color: var(--hoofdkleur);*/
+    /*    margin-right: 1em;*/
+}
+
+
+.disclamer p {
+    margin-bottom: 1.5em;
+}
+
+.disclamer a {
+    color: var(--hoofdkleur);
+    text-decoration: underline;
+}
 
 /* Breakpoints */
-@media all and (min-width: 30em) {
-}
+@media all and (min-width: 30em) {}
 
 @media all and (min-width: 60em) {
     .modellen ul li {
@@ -315,6 +479,7 @@ footer {}
         font-weight: 900;
         opacity: 0.8;
     }
+
     body {
         overflow: hidden;
     }
