@@ -38,15 +38,12 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+- Veel ging goed. Het kost veel tijd meer nog niet tegen veel dingen aangelopen. Alleen slider maken was wel lastig. Ook afbeeldingen afsnijden gaat niet altijd even soepel.
+- Ik kijk wel op tegen de detailpagina, omdat deze heel veel werk is
 
-**Screenshot(s):**
-
--screenshot(s) van hoe ver je bent met korte uitleg-
+<img src="images/procesverslag/voortgang_1.png" width="750px">
 
 ### Agenda voor meeting
-
--samen met je groepje opstellen-
 
 | student 1      | student 2          | student 3    | student 4        |
 | ---            | ---                | ---          | ---              |
@@ -54,9 +51,18 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 | an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
 | ...            | ...                | ...          | ...              |
 
+
+| student 1: Anniek             | student 2: Gwyneth        | student 3: Chantal              | student 4: Mark   |
+| ---                           | ---                       | ---                             | ---               |
+| De slider in de header.       | De afbeeldingen in de slider 2 op de gamepagina. | Hoe ik het optijd ga afkrijgen. | Hoe kan ik icoontjes toevoegen voor en na tekst, '>' en bolletjes voor sliders.     |
+| De breedte van afbeeldingen.  | Zoekbalk zonder streepje. |                                 | Moet elk drop-down ding/slide worden uitgewerkt.  |
+| De footer die 2-koloms hoort. |                           |                                 | Social gedeelte heel lelijk op de echte site, moet dit ook zo uitgewerkt worden.               |
+
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+- Niet te moeilijk denken, gewoon '>' teken op toetsenbord gebruiken.
+- Nee, niet elk menu. Ook 2 menu's bovenaan hoeven niet.
+- Lelijke hoeft niet uitgewerkt te worden. Zelf op goeie manier oplossen.
 
 
 
