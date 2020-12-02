@@ -6,6 +6,8 @@
     --contrastkleur3: #313639;
     --contrastkleur4: #191f22;
     --contrastkleur5: #959899;
+    --contrastkleur6: #d5001c;
+    --contrastkleur7: #c8cacb;
     --schaduw: rgba(0, 0, 0, .14) 0 0 8px 0;
     /*    0 5px 5px -2.5px rgba(0,0,0,.2);*/
     --border: 1px solid #ccc;
@@ -115,10 +117,10 @@ header nav {
 
 header nav a img {
     background-color: var(--hoofdkleur);
-    height: 5em;
+    height: 5.1em;
     box-shadow: var(--schaduw);
-    width: 6.5em;
-    margin: 0 0 0 .3em;
+    width: 6.4em;
+    margin: 0 0 0 .4em;
     position: absolute;
     top: 0;
     left: 0;
@@ -131,7 +133,7 @@ header nav ul {
 }
 
 header nav ul li {
-    padding: 0 1em
+    padding: 0 1.1em
 }
 
 header nav ul li:first-of-type {
@@ -144,7 +146,11 @@ main button {}
 
 
 /* Slider section */
-.main_slider ol {
+.main_slider {
+    position: relative;
+}
+
+.main_slider ol:first-of-type {
     scroll-snap-type: x mandatory;
     display: flex;
     overflow-x: scroll;
@@ -153,28 +159,28 @@ main button {}
     overflow-y: hidden;
 }
 
-.main_slider ol li {
+.main_slider ol:first-of-type li {
     scroll-snap-align: start;
     min-width: 100%;
     position: relative;
     height: 26em;
 }
 
-.main_slider ol li img {
+.main_slider ol:first-of-type li img {
     object-fit: cover;
     /*    object-position: 50% 0%;*/
     width: 100%;
     height: 100%;
 }
 
-.main_slider ol li:first-of-type h1 {
+.main_slider ol:first-of-type li:first-of-type h1 {
     color: var(--contrastkleur);
     position: absolute;
     left: 8%;
     top: 5%;
 }
 
-.main_slider ol li:first-of-type p {
+.main_slider ol:first-of-type li:first-of-type p {
     color: var(--contrastkleur);
     position: absolute;
     left: 8%;
@@ -184,14 +190,21 @@ main button {}
     line-height: 1.3em;
 }
 
-.main_slider ol li h1 {
+.main_slider ol:first-of-type li h1:before {
+    content: ">";
+    color: var(--contrastkleur6);
+    position: absolute;
+    left: -.7em;
+}
+
+.main_slider ol:first-of-type li h1 {
     color: var(--hoofdkleur);
     position: absolute;
     left: 8%;
     bottom: 15%;
 }
 
-.main_slider ol li p {
+.main_slider ol:first-of-type li p {
     color: var(--hoofdkleur);
     position: absolute;
     left: 8%;
@@ -199,6 +212,30 @@ main button {}
     font-size: 1.3em;
     width: 90%;
     line-height: 1.3em;
+}
+
+/* Bolletjes main slider */
+
+.main_slider ol:last-of-type {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: .8em;
+}
+
+.main_slider ol:last-of-type li {
+    background-color: var(--contrastkleur7);
+    width: .5em;
+    height: .5em;
+    border-radius: 50%;
+    margin: .5em;
+    cursor: pointer;
+}
+
+.main_slider ol li.slider_active {
+    background-color: var(--contrastkleur6);
+    cursor: default;
 }
 
 /* Modellen section */
@@ -211,6 +248,7 @@ main button {}
 .modellen ul li {
     flex-basis: 50%;
     position: relative;
+    cursor: pointer;
 }
 
 .modellen ul li img {
@@ -218,11 +256,23 @@ main button {}
     height: 100%;
 }
 
+.modellen ul li h3:before {
+    content: ">";
+    color: var(--contrastkleur6);
+    position: absolute;
+    left: -.7em;
+}
+
+.modellen ul li:hover h3 {
+    color: var(--contrastkleur6);
+}
+
 .modellen ul li h3 {
     color: var(--hoofdkleur);
     position: absolute;
     bottom: 2.5em;
     left: 15%;
+    transition: color .3s;
 }
 
 .modellen ul li p {
@@ -239,27 +289,79 @@ main button {}
 
 .actueel {
     padding: 1.5rem;
+    position: relative;
 }
 
 .actueel h2 {
     padding: 0 0 1.5rem 0;
 }
 
-.actueel ol {
+.actueel ol:first-of-type {
     scroll-snap-type: x mandatory;
     display: flex;
     overflow-x: scroll;
     width: 100%;
 }
 
-.actueel ol li {
+.actueel ol:first-of-type li {
     scroll-snap-align: start;
     min-width: 100%;
+    transition: color .3s;
+    cursor: pointer;
+/*    position: relative;*/
 }
 
-.actueel ol li img {
+.actueel ol:first-of-type li:hover {
+    color: var(--contrastkleur6);
+}
+
+/*
+.actueel ol:first-of-type img:after {
+    content: "";
+    width: 100%;
+    background-color: var(--contrastkleur6);
+    height: 2em;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    z-index: 100;
+}
+*/
+
+.actueel ol:first-of-type li img {
     width: 100%;
 }
+
+.actueel ol:first-of-type li p:before {
+    content: ">";
+    color: var(--contrastkleur6);
+    font-weight: 900;
+    margin-right: .5em;
+}
+
+
+/* Bolletjes actueel slider */
+
+.actueel ol:last-of-type {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.actueel ol:last-of-type li {
+    background-color: var(--contrastkleur3);
+    width: .5em;
+    height: .5em;
+    border-radius: 50%;
+    margin: .5em;
+    cursor: pointer;
+}
+
+.actueel ol li.slider_active {
+    background-color: var(--contrastkleur6);
+    cursor: default;
+}
+
 
 /* Porsche Social section */
 
@@ -267,11 +369,12 @@ main button {}
     background-color: var(--contrastkleur2);
     color: var(--hoofdkleur);
     padding: 1.5rem;
-    /*    position: relative;*/
+    text-align: right;
 }
 
 .social h2 {
     padding: 0 0 1.5rem 0;
+    text-align: left;
 }
 
 .social ul {
@@ -291,11 +394,20 @@ main button {}
     height: 100%;
 }
 
+.social .pijl {
+    margin-right: .6em;
+}
+
 .social a {
     border: var(--border);
     padding: .8em 1.3em;
     color: var(--hoofdkleur);
     display: inline-block;
+}
+
+.social a:hover {
+    border-color: var(--contrastkleur6);
+    color: var(--contrastkleur6);
 }
 
 /* servide en advies section*/
@@ -307,32 +419,6 @@ main button {}
 .service_advies h2 {
     padding: 0 0 1.5rem 0;
 }
-
-
-
-/*
-.main_slider ol {
-    scroll-snap-type: x mandatory;
-    display: flex;
-    overflow-x: scroll;
-    width: 100%;
-    height: 26em;
-    overflow-y: hidden;
-}
-
-.main_slider ol li {
-    scroll-snap-align: start;
-    min-width: 100%;
-    position: relative;
-    height: 26em;
-}
-
-.main_slider ol li img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-*/
 
 .service_advies ul {
     display: flex;
@@ -356,11 +442,23 @@ main button {}
     /*    overflow-y: hidden;*/
 }
 
+.service_advies ul li h3:before {
+    content: ">";
+    color: var(--contrastkleur6);
+    position: absolute;
+    left: -.7em;
+}
+
 .service_advies ul li h3 {
     position: absolute;
     left: 1em;
     bottom: 1em;
     color: var(--hoofdkleur);
+    transition: color .3s;
+}
+
+.service_advies ul li:hover h3 {
+    color: var(--contrastkleur6);
 }
 
 
@@ -372,24 +470,63 @@ footer {}
     padding: 1.5rem;
 }
 
+/* links ingeklapt */
 .links {
     margin-bottom: 3em;
 }
 
-.links > li:first-of-type {
+.links > li:first-of-type span {
     border-top: var(--border);
 }
 
 .links > li {
+    position: relative;
+    cursor: pointer;
+}
+
+.links > li > span {
     padding: .7em 0;
     font-size: 1.1em;
     font-weight: 600;
     border-bottom: var(--border);
+    display: block;
+/*    position: relative;*/
+    width: 100%;
 }
 
+.links > li > span:after {
+    content: "↓";
+    position: absolute;
+    right: 0;
+    top: .7em;
+}
+
+/* Dropdown uitgevouwd */
+
+.links .links_uitgevouwd ul {
+    display: block;
+}
+
+.links .links_uitgevouwd span:after {
+    content: "↑";
+}
+
+
+/* links uitgeklapt */
 .links ul {
     display: none;
 }
+
+.links ul li {
+    font-weight: 300;
+    padding: 1em 0;
+}
+
+.links ul li:hover {
+    color: var(--contrastkleur6)
+}
+
+
 
 /* Iconen lijst */
 
@@ -407,6 +544,12 @@ footer {}
     height: 3.1em;
     margin-right: .5em;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons li img {
+    width: 1.5em;
 }
 
 /* Disclamer */
@@ -429,6 +572,14 @@ footer {}
 }
 
 .regio_form select {
+    /*    https://stackoverflow.com/questions/33476762/reset-remove-all-styles-for-input-select-and-button-across-all-browsers-includi*/
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    /*    -----*/
     width: 100%;
     padding: .8em;
     background-color: var(--contrastkleur3);
