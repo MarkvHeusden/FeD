@@ -41,16 +41,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 - Veel ging goed. Het kost veel tijd meer nog niet tegen veel dingen aangelopen. Alleen slider maken was wel lastig. Ook afbeeldingen afsnijden gaat niet altijd even soepel.
 - Ik kijk wel op tegen de detailpagina, omdat deze heel veel werk is
 
-<img src="images/procesverslag/voortgang_1.png" width="750px">
+<img src="images/procesverslag/voortgang_1.png" width="375px">
 
 ### Agenda voor meeting
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
 
 | student 1: Anniek             | student 2: Gwyneth        | student 3: Chantal              | student 4: Mark   |
 | ---                           | ---                       | ---                             | ---               |
