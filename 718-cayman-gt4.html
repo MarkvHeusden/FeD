@@ -6,16 +6,17 @@
     <meta name="author" content="Mark van Heusden">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home - Porsche Nederland</title>
+    <title>718 Cayman GT4 - Porsche Nederland</title>
 
-    <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="images/porsche-logo.svg" alt=""></a>
+            <a href="./index.html"><img src="./images/porsche-logo.svg" alt=""></a>
             <ul>
                 <li><a href="#">Modellen</a></li>
                 <li><a href="#">Hoofdnavigatie</a></li>
@@ -34,10 +35,10 @@
             <ol>
                 <li><a href="#over">Over 718</a></li>
                 <li><a href="#ervaring">360° Ervaring</a></li>
-                <li><a href="#">Modellen & data</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Configurator</a></li>
-                <li><a href="#">Galerij</a></li>
+                <li><a href="#varianten">Modellen & data</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#configurator">Configurator</a></li>
+                <li><a href="#galerij">Galerij</a></li>
                 <li><a href="#">Brochure</a></li>
                 <li><a href="#">Dealer / concessie</a></li>
                 <li><a href="#">Contact</a></li>
@@ -49,9 +50,9 @@
             <h2>Perfectly irrational.</h2>
             <p>718 Cayman GT4 is de perfecte sportwagen voor iedereen die graag grenzen overschrijdt. Voor iedereen die liever vraagt ‘Waarom niet?’ dan ‘Waarom?’ Voor iedereen die plezier serieus neemt en liever in een sportstoel zit dan in een leren fauteuil.</p>
             <ol>
-                <li><img src="images/over_718_1.webp" alt=""></li>
-                <li><img src="images/over_718_2.webp" alt=""></li>
-                <li><img src="images/over_718_3.webp" alt=""></li>
+                <li><img src="./images/over_718_1.webp" alt=""></li>
+                <li><img src="./images/over_718_2.webp" alt=""></li>
+                <li><img src="./images/over_718_3.webp" alt=""></li>
             </ol>
             <ol>
                 <li class="slider_active"></li>
@@ -60,29 +61,80 @@
             </ol>
             <h2>Design en aerodynamica.</h2>
             <p>Geen flauw windje. Geen zacht briesje. De barometer staat op storm. Eén blik op 718 Cayman GT4 is voldoende om te realiseren dat luchtweerstand zinloos is.</p>
-            <section style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/488717110?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></section>
+            <!--            Code dekopieerd vanuit Vimeo-->
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/488717110?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
             <script src="https://player.vimeo.com/api/player.js"></script>
+            <!--            Einde Vimeo code-->
             <h3>Als wind niet waait, maar stroomt.</h3>
             <video autoplay loop muted playsinline>
-                <source src="images/over_718_video_2.mp4" type="video/mp4">
+                <source src="./images/over_718_video_2.mp4" type="video/mp4">
             </video>
         </section>
-        <section class="360_ervaring">
+        <section class="ervaring_360">
             <span class="link_offset" id="ervaring"></span>
             <h2>360°</h2>
+            <ul>
+                <li><a class="active" href="#">Exterieur</a></li>
+                <li><a href="#">Interieur</a></li>
+            </ul>
+            <div>
+                <img src="./images/360_exterieur.webp" alt="">
+                <img src="./images/360-degrees.svg" alt="">
+                <h2>Ontdek</h2>
+            </div>
+        </section>
+        <section class="varianten">
+            <span class="link_offset" id="varianten"></span>
+            <div>
+                <img src="./images/modellen_klein.webp" alt="">
+                <h3>718 Cayman GT4</h3>
+                <p>Vanaf € 141.000,00 (consumentenadviesprijs)</p>
+            </div>
+        </section>
+        <section class="data">
+            <img src="./images/modellen_groot.webp" alt="">
+            <h2>Technische gegevens</h2>
+            <h3>WLTP*</h3>
+            <ul class="wltp">
+                <li>
+                    <img src="./images/gas.svg" alt="">
+                    <p>11.1 - 10,7<span>l/100km</span></p>
+                </li>
+                <li>
+                    <img src="./images/co2.svg" alt="">
+                    <p>251 - 242<span>g/km</span></p>
+                </li>
+            </ul>
+            <ul class="gegevens">
+                <li>
+                    <p>309 kW/420 pk<span>Vermogen (kW)/Vermogen (pk)</span></p>
+                </li>
+                <li>
+                    <p>4,4 s<span>Acceleratie van 0 - 100 km/u</span></p>
+                </li>
+                <li>
+                    <p>304 km/h<span>Topsnelheid</span></p>
+                </li>
+                <li>
+                    <p>1.801 mm<span>Breedte</span></p>
+                </li>
+                <li>
+                    <p>4.456 mm<span>Lengte</span></p>
+                </li>
+            </ul>
+            <a href="#">Ontdek meer</a>
         </section>
 
-        <section class="NAAAAM">
-            <span class="link_offset" id="NAAAAAM"></span>
+
+
+        <section class="features">
+            <span class="link_offset" id="features"></span>
         </section>
-        <section class="NAAAAM">
-            <span class="link_offset" id="NAAAAAM"></span>
+        <section class="configurator">
+            <span class="link_offset" id="configurator"></span>
         </section>
-        <section class="NAAAAM">
-            <span class="link_offset" id="NAAAAAM"></span>
-        </section>
-        <section class="NAAAAM">
-            <span class="link_offset" id="NAAAAAM"></span>
+        <section class="galerij">
+            <span class="link_offset" id="galerij"></span>
         </section>
     </main>
     <footer>
@@ -127,11 +179,11 @@
             </ul>
             <h4>Volg Porsche</h4>
             <ul class="icons">
-                <li><img src="images/facebook.svg" alt=""></li>
-                <li><img src="images/youtube.svg" alt=""></li>
-                <li><img src="images/twitter.svg" alt=""></li>
-                <li><img src="images/pinterest.svg" alt=""></li>
-                <li><img src="images/linkedin.svg" alt=""></li>
+                <li><img src="./images/facebook.svg" alt=""></li>
+                <li><img src="./images/youtube.svg" alt=""></li>
+                <li><img src="./images/twitter.svg" alt=""></li>
+                <li><img src="./images/pinterest.svg" alt=""></li>
+                <li><img src="./images/linkedin.svg" alt=""></li>
             </ul>
         </section>
         <section class="disclamer">
@@ -157,10 +209,10 @@
                     <option value="">Optie 6</option>
                 </select>
             </form>
-            <p>© 2020 Porsche Nederland. <a href="">Copyright & privacy.</a> <a href="">Cookies.</a> <a href="">Verkoopinformatie.</a></p>
-            <p>* De getoonde prijzen zijn de consumentenadviesprijs (dit is inclusief btw, bpm, rijklaarmaakkosten, recycling- en beheerbijdrage en leges). Lees voor meer informatie de algemene <a href="">verkoopinformatie.</a> Aan deze prijzen kunnen geen rechten worden ontleend. De getoonde prijzen zijn dagprijzen inclusief geldende belastingregels.</p>
-            <p>Met ingang van 1 juli 2020 vindt in Nederland de overgang plaats naar de <a href="">WLTP</a> testmethode. De bpm wordt niet alleen over de CO2 van de basisuitvoering berekend, maar ook (meer-)uitvoeringen en opties hebben invloed op de CO2 uitstoot. Dit betekent dat iedere unieke configuratie een nieuw berekende CO2-uitstootwaarde alsmede bpm krijgt. Voor de technische gegevens van de door u gewenste auto inclusief pakketten, optionele velgen en/of opties verwijzen wij u naar de Car Configurator of uw dealer. Afrondingsverschillen, wijzigingen, druk- en zetfouten voorbehouden. De Porsche dealer kan u vrijblijvend van een definitieve offerte voorzien.</p>
-            <p>** Belangrijke informatie over de volledig elektrische Porsche modellen kan <a href="">hier</a> gevonden worden.</p>
+            <p>© 2020 Porsche Nederland. <a href="#">Copyright & privacy.</a> <a href="#">Cookies.</a> <a href="#">Verkoopinformatie.</a></p>
+            <p>* De getoonde prijzen zijn de consumentenadviesprijs (dit is inclusief btw, bpm, rijklaarmaakkosten, recycling- en beheerbijdrage en leges). Lees voor meer informatie de algemene <a href="#">verkoopinformatie.</a> Aan deze prijzen kunnen geen rechten worden ontleend. De getoonde prijzen zijn dagprijzen inclusief geldende belastingregels.</p>
+            <p>Met ingang van 1 juli 2020 vindt in Nederland de overgang plaats naar de <a href="#">WLTP</a> testmethode. De bpm wordt niet alleen over de CO2 van de basisuitvoering berekend, maar ook (meer-)uitvoeringen en opties hebben invloed op de CO2 uitstoot. Dit betekent dat iedere unieke configuratie een nieuw berekende CO2-uitstootwaarde alsmede bpm krijgt. Voor de technische gegevens van de door u gewenste auto inclusief pakketten, optionele velgen en/of opties verwijzen wij u naar de Car Configurator of uw dealer. Afrondingsverschillen, wijzigingen, druk- en zetfouten voorbehouden. De Porsche dealer kan u vrijblijvend van een definitieve offerte voorzien.</p>
+            <p>** Belangrijke informatie over de volledig elektrische Porsche modellen kan <a href="#">hier</a> gevonden worden.</p>
         </section>
     </footer>
 
