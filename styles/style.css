@@ -97,6 +97,10 @@ iframe {
     display: block;
 }
 
+iframe {
+    border: none;
+}
+
 /* form styling */
 form {}
 
@@ -486,7 +490,7 @@ header nav ul li:first-of-type {
 
 .pagina_navigatie {
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 1000;
     background-color: var(--hoofdkleur);
     height: 3.75rem;
