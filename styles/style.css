@@ -11,7 +11,7 @@
     --contrastkleur8: #eff0f1;
     --schaduw: 0 0 8px 0 rgba(0, 0, 0, .14);
     --schaduw2: 0 5px 5px -2.5px rgba(0, 0, 0, .2);
-    --schaduw3: 5px 4px 10px 0 rgba(0,0,0,.2);
+    --schaduw3: 5px 4px 10px 0 rgba(0, 0, 0, .2);
     --border: 1px solid #ccc;
 }
 
@@ -31,6 +31,7 @@ html {
 body {
     max-width: 120em;
     margin: 0 auto;
+    /*    scroll-behavior: smooth;*/
 }
 
 section {
@@ -86,9 +87,15 @@ a:active {}
 
 
 /* https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
+/*
 span.link_offset {
     position: absolute;
     top: -3.75rem;
+}
+*/
+
+.link_offset {
+    scroll-margin: 3.7rem 0 0 0;
 }
 
 video,
@@ -162,7 +169,6 @@ header nav ul li:first-of-type {
     border-right: 1px solid #ccc;
 }
 
-
 /* Slider section */
 .main_slider {
     position: relative;
@@ -175,10 +181,20 @@ header nav ul li:first-of-type {
     width: 100%;
     height: 26em;
     overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    /*    scroll-margin: 3.7rem 0 0 0;*/
+}
+
+.main_slider ol::-webkit-scrollbar {
+    display: none;
 }
 
 .main_slider ol:first-of-type li {
     scroll-snap-align: start;
+    scroll-margin: 3.7rem 0 0 0;
+    /*    scroll-margin-top: 3.7rem;*/
+    /*    scroll-snap-margin-top: 3.7rem;*/
     min-width: 100%;
     position: relative;
     height: 26em;
@@ -247,7 +263,13 @@ header nav ul li:first-of-type {
     height: .5em;
     border-radius: 50%;
     margin: .5em;
-    cursor: pointer;
+    /*    cursor: pointer;*/
+}
+
+.main_slider ol:last-of-type li a {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .main_slider ol li.slider_active {
@@ -591,8 +613,9 @@ header nav ul li:first-of-type {
 /* 360 ervaring */
 
 .ervaring_360 {
-/*        background-color: rgba(0, 0, 0, .5);*/
+    /*        background-color: rgba(0, 0, 0, .5);*/
 }
+
 .ervaring_360 > h2 {
     padding-bottom: 2.5em;
 }
@@ -609,7 +632,7 @@ header nav ul li:first-of-type {
 .ervaring_360 ul li a {
     padding: .8em 1.25em;
     background-color: var(--hoofdkleur);
-/*    display: inline-block;*/
+    /*    display: inline-block;*/
 }
 
 .ervaring_360 ul li a.active {
@@ -622,10 +645,10 @@ header nav ul li:first-of-type {
     overflow-x: hidden;
 }
 
-.ervaring_360 div img:first-of-type{
+.ervaring_360 div img:first-of-type {
     display: block;
     height: 30em;
-    
+
 }
 
 .ervaring_360 div img:last-of-type {
@@ -735,7 +758,7 @@ header nav ul li:first-of-type {
     width: 2.5em;
     height: 2.5em;
     margin-right: .5em;
-/*    border: 1px solid white;*/
+    /*    border: 1px solid white;*/
     border-radius: 50%;
     padding: .3em;
     box-shadow: 0 0 0 1px white;
@@ -781,6 +804,103 @@ header nav ul li:first-of-type {
     content: ">";
     margin-right: .6em;
 }
+
+/* Configurator */
+
+.configurator {
+    padding: 1.5rem;
+}
+
+.configurator h2 {
+    padding: 0 0 1.5rem 0;
+}
+
+.configurator > img {
+    width: 100%;
+}
+
+.configurator > ul {
+    margin-bottom: 10em;
+}
+
+.configurator > ul > li {
+    position: relative;
+    cursor: pointer;
+}
+
+.configurator > ul > li > span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-top: var(--border);
+    padding: .25em 0;
+    width: 100%;
+    display: block;
+}
+
+.configurator > ul > li:first-of-type > span {
+    border-top: none;
+}
+
+.configurator > ul > li:last-of-type > span {
+    border-bottom: var(--border);
+}
+
+.configurator > ul > li > span::after {
+    content: "↓";
+    position: absolute;
+    right: 0;
+    /*    top: .7em;*/
+}
+
+/* Items wanneer uitgeklapt */
+.configurator div span {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.config_items {
+    display: flex;
+}
+
+.config_items li {
+    width: 3.75rem;
+    height: 3.75rem;
+    display: block;
+    background-color: black;
+}
+
+
+
+
+/*  uitgevouwd */
+.cofig_toggle_items {
+    display: none;
+}
+
+.config_uitgevouwd .cofig_toggle_items {
+    display: block;
+}
+
+/*
+.config_items,
+.configurator span {
+    display: none;
+}
+*/
+
+/*
+.config_uitgevouwd .config_items,
+.config_uitgevouwd span {
+    display: block;
+}
+*/
+
+.configurator .config_uitgevouwd > span::after {
+    content: "↑";
+}
+
+/*   */
+
 
 
 

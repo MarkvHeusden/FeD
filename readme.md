@@ -30,8 +30,18 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
 
+- Over het algemeen ging het best goed. Af en toe tegen wat dingen aangelopen maar na wat googlen wel gefixt.
+- Wel ben ik heel veel tijd verloren aan het bemachtigen van de video's voor mijn detailpagina. Deze waren ge-embed in de site via Vimeo, alleen stonden deze video's op private als ik ze er zelf in deed.
+- Ook ben ik veel tijd verloren aan een element waar postion:sticky niet op werkte, na heel veel hoofdpijn bleek het aan de live preview van brackets te liggen ;(
+- Verder is mijn homepagina nu zo goed als af en mijn detailpagina ook al een heel end. Wel is mijn detailpagina heel veel werk nog.
+
+<img src="./images/procesverslag/detail_voortgang_2.png" width="375px">
+
+<img src="./images/procesverslag/home_voortgang_2.png" width="375px">
+
+### Verslag van meeting
 
 
 ## Voortgang 1 (week 3)
