@@ -1,14 +1,9 @@
 # Procesverslag
 **Auteur:** Mark van Heusden
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
-
-
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. Afbeeldingen/content: www.Porsche.com
 
 
 
@@ -24,7 +19,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+- Deze week was een drukke week. Ik heb niet zoveel tijd aan FeD besteed als ik wou, maar ik heb wel nog een aantal dingen gedaan om de detailpagina verder af te krijgen. Ook heb ik veel tijd besteed aan de slider. Ik de bolletjes aan de onderkant geprobeerd werkend te krijgen. Dit is deels gelukt, alleen nog niet zoals ik wil. Ik ga hier later verder naar kijken als ik tijd over heb.
+
+<img src="./images/procesverslag/home_voortgang_3.png">
 
 
 
@@ -42,6 +39,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 <img src="./images/procesverslag/home_voortgang_2.png" width="375px">
 
 ### Verslag van meeting
+- Ik had een vraag over hoe ik mijn slider bolletjes werkend kon krijgen. Mijn slider werkte al door te swipen, maar ik wilde zorgen dat de bolletjes ook klikbaar waren. Ik heb uitleg gekregen over hoe dit moet, alleen zal ik dit waarschijnlijk alleen gaan toepassen als er tijd over is, aangezien ik op responsive wil focussen.
 
 
 ## Voortgang 1 (week 3)
