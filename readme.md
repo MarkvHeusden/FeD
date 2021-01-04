@@ -21,7 +21,7 @@
 
 - Deze week was een drukke week. Ik heb niet zoveel tijd aan FeD besteed als ik wou, maar ik heb wel nog een aantal dingen gedaan om de detailpagina verder af te krijgen. Ook heb ik veel tijd besteed aan de slider. Ik de bolletjes aan de onderkant geprobeerd werkend te krijgen. Dit is deels gelukt, alleen nog niet zoals ik wil. Ik ga hier later verder naar kijken als ik tijd over heb.
 
-<img src="./images/procesverslag/home_voortgang_3.png">
+<img src="./images/procesverslag/home_voortgang_3.png" width="375px">
 
 
 

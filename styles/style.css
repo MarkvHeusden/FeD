@@ -828,6 +828,16 @@ header nav ul li:first-of-type {
     cursor: pointer;
 }
 
+/*
+.config_toggle_items > span {
+   padding: 1em 0 1em 0;
+}
+*/
+
+.kleur_1, .kleur_2, .kleur_3 {
+    padding: .3em 0 .5em 0;
+}
+
 .configurator > ul > li > span {
     font-size: 1.25rem;
     font-weight: 600;
@@ -867,17 +877,56 @@ header nav ul li:first-of-type {
     height: 3.75rem;
     display: block;
     background-color: black;
+    margin-right: .1em;
 }
 
+/* kleuren opties 1 */
+.kleur_1 li:nth-of-type(1) {
+    background-color: rgb(239, 239, 239);
+}
 
+.kleur_1 li:nth-of-type(2) {
+    background-color: rgb(0, 0, 0)
+}
+
+.kleur_1 li:nth-of-type(3) {
+    background-color: rgb(204, 0, 51)
+}
+
+.kleur_1 li:nth-of-type(4) {
+    background-color: rgb(255, 204, 0)
+}
+
+/* kleur opties 2*/
+
+.kleur_2 li:nth-of-type(1) {
+    background-color: rgb(239, 245, 249)
+}
+
+.kleur_2 li:nth-of-type(2) {
+    background-color: rgb(204, 204, 204)
+}
+
+.kleur_2 li:nth-of-type(3) {
+    background-color: rgb(0, 25, 75)
+}
+
+/* kleur opties 3 */
+.kleur_3 li:nth-of-type(1) {
+    background-color: rgb(199, 199, 191)
+}
+
+.kleur_3 li:nth-of-type(2) {
+    background-color: rgb(60, 147, 67)
+}
 
 
 /*  uitgevouwd */
-.cofig_toggle_items {
+.config_toggle_items {
     display: none;
 }
 
-.config_uitgevouwd .cofig_toggle_items {
+.config_uitgevouwd .config_toggle_items {
     display: block;
 }
 
