@@ -9,12 +9,11 @@
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
-
-**Screenshot(s):**
-
--screenshot(s) van je eindresultaat-
-
+- Over het algemeen ging veel goed in dit project. Het was wel een opdracht die veel tijd kostte, maar ik ben wel tevreden met het eindresultaat. 
+- Mijn focus lag op responsive ontwerpen. Dit was redelijk nieuw voor mij en verliep prima. Alleen de header van de originele desktop versie heb ik er niet in verwerkt wegens tijdsgebrek. Wel heb ik wat dingetjes van surface plane uitgewerkt, zoals alle dropdowns en de configurator op de detailpagina.
+- Ik ben het meest trots op de detailpagina, maar dat komt ook omdat ik het ontwerp van de originele homepagina niet zo mooi vind.
+De afbeeldingen zijn helaas niet altijd even scherp, maar hogere kwaliteit afbeeldingen downloaden lukte niet altijd.
+- Als ik meer tijd had zou ik ook nog graag de bolletjes onder de sliders werkend maken. Hier was ik mee bezig maar helaas niet optijd af gekregen.
 
 
 ## Voortgang 3 (week 6)

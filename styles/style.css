@@ -9,10 +9,14 @@
     --contrastkleur6: #d5001c;
     --contrastkleur7: #c8cacb;
     --contrastkleur8: #eff0f1;
+    --contrastkleur9: #15577e;
     --schaduw: 0 0 8px 0 rgba(0, 0, 0, .14);
     --schaduw2: 0 5px 5px -2.5px rgba(0, 0, 0, .2);
     --schaduw3: 5px 4px 10px 0 rgba(0, 0, 0, .2);
     --border: 1px solid #ccc;
+    --btnpadding: .8em 1.3em;
+    --mainpadding: 1.5rem;
+    --headingpadding: 0 0 1.5rem 0;
 }
 
 /* Generic styling */
@@ -29,9 +33,8 @@ html {
 }
 
 body {
-    max-width: 120em;
+    max-width: 120rem;
     margin: 0 auto;
-    /*    scroll-behavior: smooth;*/
 }
 
 section {
@@ -39,23 +42,23 @@ section {
 }
 
 h1 {
-    font-size: 1.9rem;
+    font-size: 1.9em;
     font-weight: 600;
 }
 
 h2 {
-    padding: 1.5rem;
-    font-size: 1.5rem;
+    padding: var(--mainpadding);
+    font-size: 1.5em;
     font-weight: 600;
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: 600;
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
@@ -76,28 +79,6 @@ a {
     text-decoration: none;
 }
 
-a:link {}
-
-a:visited {}
-
-a:hover,
-a:focus {}
-
-a:active {}
-
-
-/* https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
-/*
-span.link_offset {
-    position: absolute;
-    top: -3.75rem;
-}
-*/
-
-.link_offset {
-    scroll-margin: 3.7rem 0 0 0;
-}
-
 video,
 iframe {
     width: 100%;
@@ -109,11 +90,9 @@ iframe {
 }
 
 /* form styling */
-form {}
-
 select {
     color: var(--hoofdkleur);
-    font-size: 1em;
+    font-size: 1rem;
     font-family: 'Porsche Next TT', 'Arial Narrow', sans-serif;
     outline: none;
     border-radius: 0;
@@ -122,19 +101,7 @@ select {
     border: none;
 }
 
-fieldset {}
-
-legend {}
-
-label {}
-
-input {}
-
-input:invalid {}
-
 /* Section styling */
-header {}
-
 header nav {
     display: flex;
     justify-content: space-between;
@@ -183,7 +150,7 @@ header nav ul li:first-of-type {
     overflow-y: hidden;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    /*    scroll-margin: 3.7rem 0 0 0;*/
+    scroll-margin: 3.7rem 0 0 0;
 }
 
 .main_slider ol::-webkit-scrollbar {
@@ -193,7 +160,6 @@ header nav ul li:first-of-type {
 .main_slider ol:first-of-type li {
     scroll-snap-align: start;
     scroll-margin: 3.7rem 0 0 0;
-    /*    scroll-margin-top: 3.7rem;*/
     /*    scroll-snap-margin-top: 3.7rem;*/
     min-width: 100%;
     position: relative;
@@ -209,15 +175,15 @@ header nav ul li:first-of-type {
 .main_slider ol:first-of-type li:first-of-type h1 {
     color: var(--contrastkleur);
     position: absolute;
-    left: 8%;
-    top: 5%;
+    left: 2.5rem;
+    top: 1.2rem;
 }
 
 .main_slider ol:first-of-type li:first-of-type p {
     color: var(--contrastkleur);
     position: absolute;
-    left: 8%;
-    top: 15%;
+    left: 2.5rem;
+    top: 4rem;
     font-size: 1.3em;
     width: 85%;
     line-height: 1.3em;
@@ -233,15 +199,15 @@ header nav ul li:first-of-type {
 .main_slider ol:first-of-type li h1 {
     color: var(--hoofdkleur);
     position: absolute;
-    left: 8%;
-    bottom: 15%;
+    left: 2.5rem;
+    bottom: 4rem;
 }
 
 .main_slider ol:first-of-type li p {
     color: var(--hoofdkleur);
     position: absolute;
-    left: 8%;
-    bottom: 10%;
+    left: 2.5rem;
+    bottom: 2.5rem;
     font-size: 1.3em;
     width: 90%;
     line-height: 1.3em;
@@ -309,8 +275,8 @@ header nav ul li:first-of-type {
 .modellen ul li h3 {
     color: var(--hoofdkleur);
     position: absolute;
-    bottom: 2.5em;
-    left: 15%;
+    bottom: 3em;
+    left: 2.5rem;
     transition: color .3s;
 }
 
@@ -318,21 +284,21 @@ header nav ul li:first-of-type {
     color: var(--hoofdkleur);
     position: absolute;
     bottom: 1em;
-    left: 15%;
+    left: 2.5rem;
     font-size: 0.8em;
-    width: 75%;
+    width: 8rem;
 }
 
 
 /* Actueel section*/
 
 .actueel {
-    padding: 1.5rem;
+    padding: var(--mainpadding);
     position: relative;
 }
 
 .actueel h2 {
-    padding: 0 0 1.5rem 0;
+    padding: var(--headingpadding);
 }
 
 .actueel ol:first-of-type {
@@ -341,6 +307,11 @@ header nav ul li:first-of-type {
     overflow-x: scroll;
     overflow-y: hidden;
     width: 100%;
+    scrollbar-width: none;
+}
+
+.actueel ol:first-of-type::-webkit-scrollbar {
+    display: none;
 }
 
 .actueel ol:first-of-type li {
@@ -394,12 +365,12 @@ header nav ul li:first-of-type {
 .social {
     background-color: var(--contrastkleur2);
     color: var(--hoofdkleur);
-    padding: 1.5rem;
+    padding: var(--mainpadding);
     text-align: right;
 }
 
 .social h2 {
-    padding: 0 0 1.5rem 0;
+    padding: var(--headingpadding);
     text-align: left;
 }
 
@@ -415,6 +386,10 @@ header nav ul li:first-of-type {
     padding: .1em;
 }
 
+.social ul li:first-of-type {
+    flex-basis: 100%;
+}
+
 .social ul li img {
     width: 100%;
     height: 100%;
@@ -427,7 +402,7 @@ header nav ul li:first-of-type {
 
 .social a {
     border: var(--border);
-    padding: .8em 1.3em;
+    padding: var(--btnpadding);
     color: var(--hoofdkleur);
     display: inline-block;
 }
@@ -440,11 +415,11 @@ header nav ul li:first-of-type {
 /* servide en advies section*/
 
 .service_advies {
-    padding: 1.5rem
+    padding: var(--mainpadding);
 }
 
 .service_advies h2 {
-    padding: 0 0 1.5rem 0;
+    padding: var(--headingpadding);
 }
 
 .service_advies ul {
@@ -490,21 +465,28 @@ header nav ul li:first-of-type {
 /* video */
 .video {
     position: relative;
+    height: 26rem;
+}
+
+.video video {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .video h1 {
     color: var(--hoofdkleur);
     position: absolute;
-    bottom: 28%;
-    left: 8%;
+    bottom: 7.5rem;
+    left: 1.5rem;
 }
 
 .video p {
     color: var(--hoofdkleur);
     position: absolute;
-    bottom: 17%;
-    left: 8%;
-    width: 60%;
+    bottom: 4.5rem;
+    left: 1.5rem;
+    width: 15rem;
     font-size: 1.2rem
 }
 
@@ -522,14 +504,19 @@ header nav ul li:first-of-type {
 .pagina_navigatie ol {
     display: flex;
     overflow-x: scroll;
-    padding: 0 .7em;
+    padding: 0 1.5em;
     align-items: center;
     height: 100%;
+    scrollbar-width: none;
     /*    box-shadow: var(--schaduw2);*/
 }
 
+.pagina_navigatie ol::-webkit-scrollbar {
+    display: none;
+}
+
 .pagina_navigatie ol li {
-    padding: 0 1.1em;
+    padding-right: 2em;
     flex-shrink: 0;
 }
 
@@ -552,7 +539,7 @@ header nav ul li:first-of-type {
 }
 
 .over_718 h3 {
-    padding: 1.5rem;
+    padding: var(--mainpadding);
 }
 
 /* Foto slider */
@@ -561,6 +548,12 @@ header nav ul li:first-of-type {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    scroll-margin: 3.7rem 0 0 0;
+}
+
+.over_718 ol:first-of-type::-webkit-scrollbar {
+    display: none;
 }
 
 .over_718 ol:first-of-type li {
@@ -613,7 +606,7 @@ header nav ul li:first-of-type {
 /* 360 ervaring */
 
 .ervaring_360 {
-    /*        background-color: rgba(0, 0, 0, .5);*/
+    scroll-margin: 3.7rem 0 0 0;
 }
 
 .ervaring_360 > h2 {
@@ -622,7 +615,6 @@ header nav ul li:first-of-type {
 
 .ervaring_360 ul {
     display: flex;
-    box-shadow: var(--schaduw3);
     z-index: 1;
     position: absolute;
     left: 1.5em;
@@ -630,9 +622,9 @@ header nav ul li:first-of-type {
 }
 
 .ervaring_360 ul li a {
-    padding: .8em 1.25em;
+    padding: var(--btnpadding);
     background-color: var(--hoofdkleur);
-    /*    display: inline-block;*/
+    box-shadow: var(--schaduw3);
 }
 
 .ervaring_360 ul li a.active {
@@ -642,13 +634,15 @@ header nav ul li:first-of-type {
 
 .ervaring_360 div {
     position: relative;
-    overflow-x: hidden;
+    height: 30rem;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
 }
 
 .ervaring_360 div img:first-of-type {
+    min-width: 100%;
     display: block;
-    height: 30em;
-
 }
 
 .ervaring_360 div img:last-of-type {
@@ -683,6 +677,7 @@ header nav ul li:first-of-type {
 /* Modellen */
 .varianten {
     height: 15em;
+    scroll-margin: 3.7rem 0 0 0;
 }
 
 .varianten > div {
@@ -712,12 +707,25 @@ header nav ul li:first-of-type {
     text-align: center;
 }
 
+.varianten_btns {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.varianten_btns a {
+    color: var(--contrastkleur9);
+    padding: .5rem 0;
+}
+
 
 /* Data */
 .data {
     background-color: var(--contrastkleur);
     padding: 0 1.5rem;
     overflow-x: hidden;
+    scroll-margin: 3.7rem 0 0 0;
 }
 
 .data > img {
@@ -789,7 +797,7 @@ header nav ul li:first-of-type {
 
 .data > a {
     border: var(--border);
-    padding: .8em 1.3em;
+    padding: var(--btnpadding);
     color: var(--hoofdkleur);
     display: inline-block;
     margin: 2em 0;
@@ -800,7 +808,8 @@ header nav ul li:first-of-type {
     color: var(--contrastkleur6);
 }
 
-.data > a::before {
+.data > a::before,
+.configurator > div > a::before {
     content: ">";
     margin-right: .6em;
 }
@@ -808,35 +817,25 @@ header nav ul li:first-of-type {
 /* Configurator */
 
 .configurator {
-    padding: 1.5rem;
+    padding: var(--mainpadding);
+    scroll-margin: 3.7rem 0 0 0;
+    user-select: none;
 }
 
 .configurator h2 {
-    padding: 0 0 1.5rem 0;
+    padding: var(--headingpadding);
 }
 
 .configurator > img {
     width: 100%;
 }
 
-.configurator > ul {
-    margin-bottom: 10em;
-}
-
 .configurator > ul > li {
     position: relative;
     cursor: pointer;
+    user-select: none;
 }
 
-/*
-.config_toggle_items > span {
-   padding: 1em 0 1em 0;
-}
-*/
-
-.kleur_1, .kleur_2, .kleur_3 {
-    padding: .3em 0 .5em 0;
-}
 
 .configurator > ul > li > span {
     font-size: 1.25rem;
@@ -849,6 +848,7 @@ header nav ul li:first-of-type {
 
 .configurator > ul > li:first-of-type > span {
     border-top: none;
+    user-select: none;
 }
 
 .configurator > ul > li:last-of-type > span {
@@ -870,6 +870,8 @@ header nav ul li:first-of-type {
 
 .config_items {
     display: flex;
+    margin: .3em 0 .5em 0;
+    user-select: none;
 }
 
 .config_items li {
@@ -878,7 +880,37 @@ header nav ul li:first-of-type {
     display: block;
     background-color: black;
     margin-right: .1em;
+    user-select: none;
 }
+
+.velgen li {
+    width: 5em;
+    height: 5em;
+}
+
+.velgen img {
+    width: 100%;
+    height: 100%;
+}
+
+.clr_selected, .int_selected {
+    transform: scale(1.1);
+    box-shadow: 0 0 0.25rem 0 rgba(0,0,0,0.7);
+}
+
+/*
+.clr_selected::after {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--contrastkleur6);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+*/
 
 /* kleuren opties 1 */
 .kleur_1 li:nth-of-type(1) {
@@ -920,47 +952,98 @@ header nav ul li:first-of-type {
     background-color: rgb(60, 147, 67)
 }
 
+.config_items .interieur_kleur_1,
+.config_items .interieur_kleur_2,
+.config_items .interieur_kleur_3 {
+    display: flex;
+}
+
+/* interieur kleur 1 */
+.interieur_kleur_1 span:first-of-type {
+    flex: 2;
+    background-color: black
+}
+
+.interieur_kleur_1 span:last-of-type {
+    flex: 1;
+    background-color: rgb(102, 102, 102);
+}
+
+/* interieur kleur 2 */
+.interieur_kleur_2 span:first-of-type {
+    flex: 2;
+    background-color: black
+}
+
+.interieur_kleur_2 span:last-of-type {
+    flex: 1;
+    background-color: rgb(255, 204, 0);
+}
+
+/* interieur kleur 3 */
+.interieur_kleur_3 span:first-of-type {
+    flex: 2;
+    background-color: black
+}
+
+.interieur_kleur_3 span:last-of-type {
+    flex: 1;
+    background-color: rgb(204, 0, 51);
+}
+
 
 /*  uitgevouwd */
-.config_toggle_items {
+.config_content {
     display: none;
 }
 
-.config_uitgevouwd .config_toggle_items {
+.config_uitgevouwd .config_content {
     display: block;
 }
 
-/*
-.config_items,
-.configurator span {
-    display: none;
+.config_uitgevouwd .interieur {
+    display: flex;
 }
-*/
-
-/*
-.config_uitgevouwd .config_items,
-.config_uitgevouwd span {
-    display: block;
-}
-*/
 
 .configurator .config_uitgevouwd > span::after {
     content: "↑";
 }
 
-/*   */
+.configurator > div > a {
+    background-color: var(--contrastkleur9);
+    color: var(--hoofdkleur);
+    padding: var(--btnpadding);
+    display: inline-block;
+    margin: 2em 0;
+    /*    margin-top: 2em;*/
+}
 
+.center {
+    text-align: center;
+}
 
+/* Contact */
+.contact {
+    background-color: var(--contrastkleur8);
+    padding: var(--mainpadding);
+    scroll-margin: 3.7rem 0 0 0;
+}
 
+.contact h2 {
+    padding: var(--headingpadding);
+}
 
-
-
-footer {}
+.contact a {
+    margin-top: 1.5em;
+    border: 1px solid var(--contrastkleur3);
+    padding: var(--btnpadding);
+    display: inline-block;
+}
 
 /* drop-down links */
 
 .related_links {
-    padding: 1.5rem;
+    padding: var(--mainpadding);
 }
 
 /* links ingeklapt */
@@ -1070,7 +1153,7 @@ footer {}
 /* Disclamer */
 
 .disclamer {
-    padding: 1.5rem;
+    padding: var(--mainpadding);
     background-color: var(--contrastkleur4);
     color: var(--hoofdkleur);
 }
@@ -1094,12 +1177,6 @@ footer {}
     cursor: pointer;
 }
 
-.regio_form option {
-    /*    background-color: var(--hoofdkleur);*/
-    /*    margin-right: 1em;*/
-}
-
-
 .disclamer p {
     margin-bottom: 1.5em;
 }
@@ -1109,38 +1186,602 @@ footer {}
     text-decoration: underline;
 }
 
-/* Breakpoints */
-@media all and (min-width: 30em) {}
 
-@media all and (min-width: 60em) {
-    .modellen ul li {
-        flex-basis: 33.333%;
+
+/* Breakpoints */
+@media all and (min-width: 30em) {
+
+    /*    Variabelen & generieke styling   */
+    :root {
+        --mainpadding: 2rem;
+        --headingpadding: 0 0 2rem 0;
+    }
+
+    /*  Actueel slider  */
+    .actueel ol:first-of-type li {
+        min-width: 50%;
+    }
+
+    /*  Detailpagina  */
+
+    .video h1 {
+        left: 2rem;
+    }
+
+    .video p {
+        left: 2rem;
+    }
+
+    .pagina_navigatie ol {
+        padding: 0 2rem;
+    }
+
+    .over_718 p {
+        padding: .4rem 2rem 2rem 2rem;
+    }
+
+    .over_718 ol:first-of-type li {
+        padding-left: 2rem;
+    }
+
+    .over_718 ol:first-of-type li img {
+        width: calc(100vw - 4em);
+    }
+
+    .ervaring_360 ul {
+        top: 7rem;
+        left: 2rem;
+    }
+
+    .ervaring_360 div {
+        height: 100%;
+    }
+
+    .varianten {
+        height: 25rem;
+    }
+
+    .varianten > div {
+        left: 2rem;
+        width: 22.5rem;
+        height: 15rem;
+        top: 12rem;
+    }
+
+    .varianten div img {
+        width: 20rem;
+    }
+
+    .varianten_btns {
+        display: flex;
+    }
+
+    .data {
+        padding: 0 2rem;
     }
 }
 
-@media all and (min-width: 90em) {
-    html::before {
-        content: "Bekijk deze site op mobiel";
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        width: 100vw;
-        height: 100%;
-        color: var(--contrastkleur);
-        font-family: 'Porsche Next TT', 'Arial Narrow', sans-serif;
-        font-size: 6vw;
-        visibility: visible;
-        background-color: var(--hoofdkleur);
-        pointer-events: all;
-        z-index: 100;
-        overflow: hidden;
-        font-weight: 900;
-        opacity: 0.8;
+
+
+@media all and (min-width: 60em) {
+
+    /*    Variabelen  */
+    :root {
+        --mainpadding: 2rem 4rem;
     }
 
-    body {
+    /*  Generieke styling & fonts   */
+
+    h1 {
+        font-size: 2.625rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    .service_advies ul li h3 {
+        font-size: 1.25rem;
+    }
+
+    /*  Paragraven  */
+    .main_slider ol:first-of-type p {
+        font-size: 1.5rem;
+    }
+
+    .main_slider ol:first-of-type li:first-of-type p {
+        font-size: 1.5rem;
+    }
+
+    .modellen ul li p {
+        font-size: 1.125rem;
+    }
+
+    /*  Main slider  */
+    .main_slider ol:first-of-type li:first-of-type h1 {
+        left: 4rem;
+    }
+
+    .main_slider ol:first-of-type li h1 {
+        left: 4rem;
+    }
+
+    .main_slider ol:first-of-type li:first-of-type p {
+        left: 4rem;
+        top: 5rem;
+    }
+
+    .main_slider ol:first-of-type li p {
+        left: 4rem;
+    }
+
+    /*  Modellen  */
+    .modellen ul li {
+        height: 25rem;
+    }
+
+    .modellen ul li img {
+        object-fit: cover;
+    }
+
+    .modellen ul li p {
+        width: 90%;
+        left: 1rem;
+        top: 4rem;
+        font-weight: 600;
+    }
+
+    .modellen ul li h3 {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    /*  Actueel slider  */
+    .actueel ol:first-of-type li {
+        min-width: 25%;
+    }
+
+    .actueel ol:last-of-type {
+        display: none;
+    }
+
+    .modellen ul li h3::before {
+        display: none;
+    }
+
+    /*  Social  */
+    .social ul li,
+    .social ul li:first-of-type {
+        flex-basis: 33%;
+    }
+
+    /*  Service & advies  */
+    .service_advies ul li {
+        height: 15rem;
+    }
+
+    /*  Detailpagina  */
+    .video h1 {
+        bottom: 6rem;
+        left: 4rem;
+    }
+
+    .video p {
+        width: auto;
+        font-size: 1.375rem;
+        left: 4rem;
+    }
+
+    .pagina_navigatie ol {
+        padding: 0 4rem;
+    }
+
+    .over_718 p {
+        padding: .4rem 8rem 4rem 4rem;
+    }
+
+    .over_718 ol:first-of-type,
+    .over_718 ol:last-of-type {
+        width: 25rem;
+    }
+
+    .over_718 ol:first-of-type li {
+        padding-left: 0;
+    }
+
+    .over_718 ol:first-of-type li:not(:first-of-type) {
+        margin: 0;
+    }
+
+    .over_718 ol:first-of-type li img {
+        width: 25rem
+    }
+
+    .over_718 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .over_718_txt_1 {
+        flex-basis: 50%;
+        order: 1;
+        transform: translateY(25%);
+    }
+
+    .over_718_img_1 {
+        flex-basis: 50%;
+        padding: 3rem 0;
+        order: 2;
+    }
+
+    .over_718_txt_2 {
+        flex-basis: 40%;
+        order: 4;
+        transform: translateY(20%);
+    }
+
+    .over_718 .over_718_txt_2 h2,
+    .over_718 .over_718_txt_3 h3 {
+        font-size: 1.5rem;
+    }
+
+    .over_718_txt_2 p {
+        padding-right: 4rem;
+    }
+
+    .over_718_img_2 {
+        flex-basis: 60%;
+        order: 3;
+    }
+
+    .over_718_txt_3 {
+        flex-basis: 40%;
+        order: 5;
+        transform: translateY(40%);
+    }
+
+    .over_718_img_3 {
+        flex-basis: 60%;
+        order: 6;
+        height: 21rem;
         overflow: hidden;
+        margin-top: 5rem;
+        position: relative;
+    }
+
+    .over_718_img_3 video {
+        object-fit: cover;
+        position: absolute;
+        top: -40%
+    }
+
+
+    .ervaring_360 ul {
+        left: 4rem;
+    }
+
+    .ervaring_360 div {
+        height: 26rem;
+        position: relative;
+    }
+
+    .ervaring_360 div img:first-of-type {
+        top: -140%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .varianten > div {
+        width: 35rem;
+        left: 4rem;
+    }
+
+    .varianten div img {
+        width: 30rem;
+        top: -75%;
+    }
+
+    .varianten div h3 {
+        font-size: 1.25rem;
+        padding-top: 6rem;
+    }
+
+    .varianten_btns {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .varianten_btns a {
+        padding: .5rem 1rem;
+    }
+
+    .data {
+        padding: 0 4rem;
+    }
+
+    .data h2 {
+        font-size: 2.6rem;
+        padding: 3rem 0 2rem 0
+    }
+
+    .gegevens {
+        width: 25rem;
+        margin-top: 3rem;
+    }
+
+    .gegevens li p {
+        font-size: 1.625rem;
+        font-weight: 600;
+        padding-bottom: .5rem;
+        display: flex;
+        position: relative;
+        justify-content: flex-end;
+        ;
+        width: 11rem;
+    }
+
+    .gegevens li p span {
+        font-size: 1rem;
+        font-weight: 400;
+        position: absolute;
+        left: 12rem;
+        text-align: left;
+        width: 15rem;
+    }
+
+    #configurator .center {
+        text-align: left;
+        margin: 1rem 0;
+    }
+
+    /*    Footer */
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: var(--border);
+        padding-top: 1rem;
+    }
+
+    .links li {
+        flex-basis: 50%;
+        cursor: default;
+    }
+
+    .links ul {
+        display: block;
+    }
+
+    .links ul li {
+        cursor: pointer;
+    }
+
+    .links > li > span,
+    .links > li:first-of-type span {
+        border: none;
+    }
+
+    .links > li > span::after {
+        display: none;
+    }
+
+    .related_links {
+        padding-bottom: 8rem;
+    }
+
+    .related_links h4 {
+        position: absolute;
+        left: 50%;
+        display: inline;
+        bottom: 6rem;
+    }
+
+    .icons {
+        position: absolute;
+        left: 50%;
+        bottom:2.5rem;
+    }
+
+
+    .regio_form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .regio_form label {
+        flex-basis: 100%;
+    }
+
+    .regio_form select {
+        flex-basis: 49.5%;
+        
+    }
+
+}
+
+
+
+@media all and (min-width: 90em) {
+
+    /*    Variabelen & generieke styling   */
+    :root {
+        --mainpadding: 2rem 6rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2.125rem;
+    }
+
+    .service_advies ul li h3 {
+        font-size: 1.25rem;
+    }
+
+
+    /*  Paragraven  */
+    .main_slider ol:first-of-type p {
+        font-size: 1.625rem;
+    }
+
+    .main_slider ol:first-of-type li:first-of-type p {
+        font-size: 1.625rem;
+    }
+
+    .modellen ul li p {
+        font-size: 1.25rem;
+    }
+
+
+    /*  Main slider  */
+    .main_slider ol:first-of-type {
+        height: 35rem;
+    }
+
+    .main_slider ol:first-of-type li {
+        height: 35rem;
+    }
+
+    /*  Modellen  */
+    .modellen ul li {
+        flex-basis: 33.333%;
+    }
+
+    /*  Service & advies  */
+    .service_advies ul li {
+        height: 20rem;
+    }
+
+    /*  Detailpagina  */
+    .video {
+        height: 36rem;
+    }
+
+    .video h1 {
+        left: 6rem;
+    }
+
+    .video p {
+        left: 6rem;
+    }
+
+    .pagina_navigatie ol {
+        padding: 0 6rem;
+        font-size: 1.125rem;
+    }
+
+    .pagina_navigatie ol li {
+        padding-right: 2.5rem;
+    }
+
+    .over_718 p {
+        padding: .4rem 0rem 0rem 6rem;
+    }
+
+    .over_718 ol:first-of-type,
+    .over_718 ol:first-of-type li img,
+    .over_718 ol:last-of-type {
+        width: 32rem;
+    }
+
+    #over .over_718_txt_1 h2 {
+        font-size: 3rem;
+    }
+
+    .over_718_txt_1 p:first-of-type {
+        width: 70%;
+    }
+
+    .over_718_txt_2 p:first-of-type {
+        width: 80%;
+    }
+
+    .over_718_img_3 {
+        height: 30rem;
+    }
+
+    .over_718_txt_3 {
+        transform: translateY(45%);
+    }
+
+    .ervaring_360 ul {
+        left: 6rem;
+    }
+
+    .ervaring_360 div {
+        height: 50rem;
+    }
+
+    .ervaring_360 div img:first-of-type {
+        top: -80%;
+    }
+
+    .varianten > div {
+        left: 6rem;
+    }
+
+    .data {
+        padding: 0 6rem;
+    }
+
+    .data > img {
+        left: 40%;
+    }
+
+    #configurator {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+    #configurator > h2 {
+        flex-basis: 100%;
+    }
+
+    #configurator > img {
+        flex-basis: 65%;
+        flex-shrink: 0;
+        max-width: 65%;
+        margin-right: 3rem;
+
+    }
+
+    #configurator > ul {
+        flex-basis: 30%;
+    }
+
+
+    /*  footer  */
+    .links li {
+        flex-basis: 25%;
+    }
+
+    .related_links h4 {
+        left: 72%;
+    }
+
+    .icons {
+        left: 72%;
+    }
+
+
+    .regio_form {
+        justify-content: flex-start
+    }
+
+    .regio_form select {
+        flex-basis: 25%;
+        margin-right: 1rem;
     }
 }
