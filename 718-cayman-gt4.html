@@ -14,24 +14,33 @@
 </head>
 
 <body>
+    <!--  Begin header -->
     <header>
         <nav>
+           <!--    Logo    -->
             <a href="./index.html"><img src="./images/porsche-logo.svg" alt="Porsche logo"></a>
+            <!--    Hoofdnavigatie     -->
             <ul>
                 <li><a href="#">Modellen</a></li>
                 <li><a href="#">Hoofdnavigatie</a></li>
             </ul>
         </nav>
     </header>
+    <!--  Einde header -->
+    <!--  Begin main -->
     <main>
+<!--   Video sectie    -->
         <section class="video">
+<!--     Achtergrond video met autoplay      -->
             <video autoplay loop muted playsinline poster="https://files.porsche.com/filestore/video/multimedia/none/modelseries-718gt4-intro-loop/preview_portrait/107809a2-820f-11e9-80c4-005056bbdc38;sP;twebp/porsche-image.webp">
                 <source src="https://files.porsche.com/filestore/video/multimedia/none/modelseries-718gt4-intro-loop/video-mp4_portrait/fcdfcc06-820e-11e9-80c4-005056bbdc38/porsche-video.mp4" type="video/mp4">
             </video>
             <h1>718 Cayman GT4</h1>
             <p>Vanaf €141.000,00 (consumentenadviesprijs)</p>
         </section>
+<!--    Sticky Pagina Navigatie   -->
         <nav class="pagina_navigatie">
+<!--     Navigatie slider      -->
             <ol>
                 <li><a href="#over">Over 718</a></li>
                 <li><a href="#ervaring">360° Ervaring</a></li>
@@ -45,43 +54,51 @@
                 <li><a href="#">Individualisering & Service</a></li>
             </ol>
         </nav>
+<!--    Over 718 sectie    -->
         <section class="over_718" id="over">
+<!--     Div voor desktop layout      -->
             <div class="over_718_txt_1">
                 <h2>Perfectly irrational.</h2>
                 <p>718 Cayman GT4 is de perfecte sportwagen voor iedereen die graag grenzen overschrijdt. Voor iedereen die liever vraagt ‘Waarom niet?’ dan ‘Waarom?’ Voor iedereen die plezier serieus neemt en liever in een sportstoel zit dan in een leren fauteuil.</p>
             </div>
+            <!--     Div voor desktop layout      -->
             <div class="over_718_img_1">
+<!--       Over 718 slider        -->
                 <ol>
                     <li><img src="./images/over_718_1.webp" alt="Cockpit"></li>
                     <li><img src="./images/over_718_2.webp" alt="Stoel"></li>
                     <li><img src="./images/over_718_3.webp" alt="Dashboard"></li>
                 </ol>
+<!--        Slider bolletjes        -->
                 <ol>
                     <li class="slider_active"></li>
                     <li></li>
                     <li></li>
                 </ol>
             </div>
+            <!--     Div voor desktop layout      -->
             <div class="over_718_txt_2">
                 <h2>Design en aerodynamica.</h2>
                 <p>Geen flauw windje. Geen zacht briesje. De barometer staat op storm. Eén blik op 718 Cayman GT4 is voldoende om te realiseren dat luchtweerstand zinloos is.</p>
             </div>
+            <!--     Div voor desktop layout      -->
             <div class="over_718_img_2">
-                <!--            Code dekopieerd vanuit Vimeo-->
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/488717110?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
-                <script src="https://player.vimeo.com/api/player.js"></script>
-                <!--            Einde Vimeo code-->
+               <video controls playsinline>
+                   <source src="./images/over_718_video_1.mp4">
+               </video>
             </div>
+            <!--     Div voor desktop layout      -->
             <div class="over_718_txt_3">
                 <h3>Als wind niet waait, maar stroomt.</h3>
             </div>
-
+            <!--     Div voor desktop layout      -->
             <div class="over_718_img_3">
                 <video autoplay loop muted playsinline>
                     <source src="./images/over_718_video_2.mp4" type="video/mp4">
                 </video>
             </div>
         </section>
+<!--    360 view sectie    -->
         <section class="ervaring_360" id="ervaring">
             <h2>360°</h2>
             <ul>
@@ -89,36 +106,40 @@
                 <li><a href="#">Interieur</a></li>
             </ul>
             <div>
-                <img src="./images/360_exterieur.webp" alt="Exterieur">
-                <img src="./images/360-degrees.svg" alt="">
+                <img src="./images/360_exterieur.webp" alt="Exterieur 718">
+                <img src="./images/360-degrees.svg" alt="Interieur 718">
                 <h2>Ontdek</h2>
             </div>
         </section>
+<!--    Varianten sectie    -->
         <section class="varianten" id="varianten">
             <div>
                 <img src="./images/modellen_klein.webp" alt="Model 718">
                 <h3>718 Cayman GT4</h3>
                 <p>Vanaf € 141.000,00 (consumentenadviesprijs)</p>
+<!--       Desktop buttons         -->
                 <div class="varianten_btns">
                     <a href="#configurator">Configureren</a>
                     <a href="#">Vergelijk</a>
                 </div>
             </div>
         </section>
+<!--    Data sectie    -->
         <section class="data">
             <img src="./images/modellen_groot.webp" alt="Model 718">
             <h2>Technische gegevens</h2>
             <h3>WLTP*</h3>
             <ul class="wltp">
                 <li>
-                    <img src="./images/gas.svg" alt="">
+                    <img src="./images/gas.svg" alt="Benzine icon">
                     <p>11.1 - 10,7<span>l/100km</span></p>
                 </li>
                 <li>
-                    <img src="./images/co2.svg" alt="">
+                    <img src="./images/co2.svg" alt="Co2 icon">
                     <p>251 - 242<span>g/km</span></p>
                 </li>
             </ul>
+<!--      Gegevens lijst      -->
             <ul class="gegevens">
                 <li>
                     <p>309 kW/420 pk<span>Vermogen (kW)/Vermogen (pk)</span></p>
@@ -138,17 +159,20 @@
             </ul>
             <a href="#">Ontdek meer</a>
         </section>
-
-
+<!--    Configurator sectie    -->
         <section class="configurator" id="configurator">
             <h2>Configurator</h2>
             <img id="config_img" src="./images/config/st_geel.jpeg" alt="configurator voorbeeld">
+<!--     Configurator dropdown list       -->
             <ul>
+<!--    Dropdown kleuren     -->
                 <li class="config_uitgevouwd">
                     <span>Exterieurkleur</span>
+                    <!--     kleuren content      -->
                     <div class="config_content">
                         <span>Standaard kleur</span>
                         <ul class="config_items kleur_1">
+<!--    Dataset kleur om afbeelding met javascript te wijzigen      -->
                             <li data-kleur="st_wit" class="select_clr"></li>
                             <li data-kleur="st_zwart" class="select_clr"></li>
                             <li data-kleur="st_rood" class="select_clr"></li>
@@ -167,14 +191,18 @@
                         </ul>
                     </div>
                 </li>
+                <!--    Dropdown velgen     -->
                 <li class="">
                     <span>Wielen</span>
+                    <!--         velgen content       -->
                     <ul class="config_items config_content velgen">
-                        <li><img src="./images/config/velg.jpg" alt=""></li>
+                        <li><img src="./images/config/velg.jpg" alt="Belg 718"></li>
                     </ul>
                 </li>
+                <!--    Dropdown interieur     -->
                 <li class="">
                     <span>Interieurkleuren & materialen</span>
+                    <!--         interieur content       -->
                     <ul class="config_items interieur config_content">
                         <li class="interieur_kleur_1 int_selected">
                             <span></span>
@@ -195,12 +223,15 @@
                 <a href="#">Ga verder met configuratie</a>
             </div>
         </section>
+<!--    Contact sectie    -->
         <section class="contact" id="contact">
             <h2>Interesse</h2>
             <p>Vraag meer informatie aan bij een Porsche Centrum.</p>
             <a href="#">Naar het contactformulier</a>
         </section>
     </main>
+    <!--  Einde main  -->
+    <!--  Begin footer  -->
     <footer>
         <section class="related_links">
             <ul class="links">
@@ -279,6 +310,7 @@
             <p>** Belangrijke informatie over de volledig elektrische Porsche modellen kan <a href="#">hier</a> gevonden worden.</p>
         </div>
     </footer>
+    <!--  Einde footer  -->
 
     <script src="scripts/script.js"></script>
 </body></html>

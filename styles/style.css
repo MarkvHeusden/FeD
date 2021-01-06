@@ -1701,6 +1701,10 @@ header nav ul li:first-of-type {
     .over_718_txt_1 p:first-of-type {
         width: 70%;
     }
+    
+    .over_718_txt_2 {
+        transform: translateY(30%);
+    }
 
     .over_718_txt_2 p:first-of-type {
         width: 80%;
